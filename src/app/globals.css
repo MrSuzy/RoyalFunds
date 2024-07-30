@@ -1,0 +1,75 @@
+/* app/globals.css */
+
+/* Tailwind base, components, and utilities imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  margin: 0;
+  font-family: 'Sans-Serif', Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.header .nav {
+  display: flex;
+  gap: 1em;
+}
+
+.header .nav a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: white;
+}
+
+.header .launch-button {
+  background: #ff00ff;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 0 10px #ff00ff;
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.text-3xl {
+  font-size: 2em;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
