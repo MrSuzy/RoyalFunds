@@ -2,15 +2,19 @@
 import ConnectWallet from "./ConnectWallet";
 
 const Header = () => (
-    <header className="header">
-      <div className="logo">ChainFunds</div>
-      <nav className="nav">
-        <a href="/product">Product</a>
-        <a href="/team">Team</a>
-        <a href="/contact">Contact</a>
-      </nav>
-      <ConnectWallet />
-    </header>
+  <nav className="bg-black text-white p-4 flex justify-between items-center">
+  <div className="text-xl font-bold">
+      Royal-Funds
+      <span className="border-b border-gray-700 block mt-1"></span>
+  </div>
+  <div className="flex space-x-8">
+      <a href="#" className="hover:text-gray-300">Product</a>
+      <a href="#" className="hover:text-gray-300">Team</a>
+      <a href="#" className="hover:text-gray-300">Contact</a>
+  </div>
+  <ConnectWallet></ConnectWallet>
+  
+</nav>
   );
   
 // const HeaderNew = () => (
