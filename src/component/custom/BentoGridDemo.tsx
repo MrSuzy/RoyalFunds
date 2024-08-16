@@ -40,7 +40,7 @@ const items = [
       </Skeleton>
     ),
     icon: <IconEye className="h-4 w-4 text-neutral-500" />,
-    redirectUrl: "/food-bank-wallet",  // Correct URL path
+    redirectUrl: "/food-bank-wallet",  
   },
   {
     title: "YEAR OF THE CHEF",
@@ -51,7 +51,7 @@ const items = [
       </Skeleton>
     ),
     icon: <IconHandClick className="h-4 w-4 text-neutral-500" />,
-    redirectUrl: "/year-of-the-chef", // Correct URL path
+    redirectUrl: "/year-of-the-chef", 
   },
   {
     title: "Potlock",
@@ -62,7 +62,7 @@ const items = [
       </Skeleton>
     ),
     icon: <IconFilter className="h-4 w-4 text-neutral-500" />,
-    redirectUrl: "/potlock", // Correct URL path
+    redirectUrl: "/potlock", 
   },
 ];
 
