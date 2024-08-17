@@ -1,35 +1,45 @@
 import React from "react";
 import Header from "@/src/component/custom/Header";
-import Header2 from "@/src/component/custom/Header2";
-import Image from "next/image"
 import './globalss.css';
-import { AspectRatio } from "@/src/component/ui/aspect-ratio"
-import BentoGridDemo from "@/src/component/custom/BentoGridDemo"
+import HeroFoodBank from "@/src/component/custom/HeroFoodBank";
+import DonateBox from "@/src/component/custom/DonateBox";
+import { Component } from "@/src/component/custom/BarChart"
+
 export default function FoodBankWallet() {
   return (
     <>
       <Header />
-      <div style={{ backgroundColor: 'black', color: 'white' }} className="container mx-auto p-4">
+      <HeroFoodBank/>
+      <DonateBox/>
+      <Component></Component>
+
+
+      {/* <div className="Container" >
+        <AspectRatio ratio={16 /4} className="bg-muted ">
+          <Image
+            src="/wallpaper.jpg"
+            alt="Photo by Drew Beamer"
+            fill
+            style={{ width: '100%', filter: 'blur(2px)' }} 
+            className="rounded-2x1 object-contain"
+          />
+        </AspectRatio>
         <h1 className="text-4xl font-bold mb-4">Food Bank Wallet</h1>
-        <Image
-          src="/wallpaper.jpg"
-          alt="Food Bank Wallet"
-          width={800}
-          height={400}
-          className="rounded-lg mb-4"
-        />
         <p className="text-lg">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
-          been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-          with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        Redistributed all funds to approved public goods on Potlock registry
         </p>
-        <p className="text-lg mt-4">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
-          been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-          with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <p>
+        Used by YEAR of CHEF for auto-redistrobution of royalties
         </p>
-      </div>
-      <Header2 />
+        <div>
+          <IconCoinBitcoin/>
+          <p>Total Funded  34.40ETH~$137.94  </p>
+        </div>
+        <span className="border-b border-gray-700 block mt-1"></span> */}
+
+      {/* </div> */}
+
+
     </>
   );
 }
